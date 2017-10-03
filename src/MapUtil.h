@@ -30,6 +30,7 @@ public:
     static string tile2folder(unsigned int tileZoom , long tileX , long tileY);
     static string tile2filename(unsigned int tileZoom , long tileX , long tileY);
     static string tile2url(unsigned int tileZoom , long tileX , long tileY);
+    static double lat2resolution(double lat,unsigned int tileZoom);
 };
 
 #endif /* MAPUTIL_H_ */

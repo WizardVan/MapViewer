@@ -84,4 +84,8 @@ string MapUtil::tile2url(unsigned int tileZoom , long tileX , long tileY)
 	//return ("map" + "\\" + string(tileZoom) + "\\" + string(tileX) + "\\" +string(tileY) + ".png");
 }
 
+double MapUtil::lat2resolution(double lat,unsigned int tileZoom)
+{
+	 return (6378137.0 * 2 * M_PI / 256 * cos(lat * M_PI / 180.0) / (2 ^ tileZoom));
+}
 

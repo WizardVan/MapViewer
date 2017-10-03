@@ -22,8 +22,8 @@ int main(int argc, char *argv[]) {
 	//Fl::visual(FL_RGB);         // prevents dithering on some systems
 	fl_register_images();
 	MapViewer *win = new MapViewer(0, 0, 800, 600, "MapViewer");
-	win->SetZoomLevel(12);
-	win->SetCenterPos(120.2,31.1);
+	win->SetZoomLevel(18);
+	win->SetCenterPos(120.3182449,31.10978317);
 	win->show();
 	gExit = false;
 	ghCommandThread = (HANDLE) _beginthreadex(NULL, 0, CommandThread, win, 0,&threadId);
